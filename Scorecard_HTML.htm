@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<html manifest="offline.appcache">
+    <head><meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='GENERATOR' content='SpreadsheetConverter  version 10.5.8092.0'>
+<!-- The parts of this webpage that is defined by the original spreadsheet have the same copyright as the original spreadsheet. -->
+<!-- The generic Excel-related parts of this page is Copyright (C) 2002-2021 Framtidsforum I&M AB, Sweden. -->
+    <title>Scorecard</title>
+    <link rel="stylesheet" href="assets/css/aqua-ssc-theme.css" id="ssc-theme"/>
+	<link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="assets/css/app.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="./assets/js/script.js?v=1" defer></script>
+	<script type="text/javascript" src="./assets/js/microsoftAuth.js?v=1" defer></script>
+	<script type="text/javascript" src="https://alcdn.msauth.net/lib/1.4.11/js/msal.min.js" defer></script>
+
+    </head>
+    <body onload="LoadFromQueryString();recalc_onclick('');" onunload='' browserstorage="false">
+        <noscript style='color:#F15623;'>
+            This web page contains a live and functional spreadsheet created with <a href='https://www.spreadsheetconverter.com'>SpreadsheetConverter</a>. Please enable JavaScript in your web browser for the live calculations to work properly.
+        </noscript>
+        <form id='formc' name='formc' method='post' action='' target='_self'>
+		    <input type='hidden' id='xl_spreadsheet' name='xl_spreadsheet' value='Scorecard' />
+            <input type='hidden' id='xl_client' name='xl_client' value='x10.5.8092.0' />
+<div id="tab" class='tab-content'>
+
+                 <div id='sheet-1' style='padding: 1em 1.4em;' class=' active'>
+                    <div class='container-fluid  '>
+<section class=''>
+<table cellspacing='0' cellpadding='0' style='border-spacing:0;' onkeydown='javascript:navigate(event);'>
+					<col width='235'/>
+					<col width='66'/>
+					<col width='93' >
+					<col width='63'/>
+					<col width='89'/>
+					<col width='101'/>
+					<col width='24'/>
+					<col width='36'/>
+					<col width='99'/>
+					<col width='109'/>
+					<col width='62'/>
+					<col width='99'/>
+					<col width='184'/>
+					<col width='62'/>
+					<tr>
+						<td id="userName" style="font-size: 30px; font-weight: bolder;" colspan="5"></td>
+					</tr>
+                    <tr style='height:19pt;'>
+						<td class='ee100' style='height:19pt;'>
+						<input id='datetoday' type='text' readonly='readonly' value='-' class='ee100' style='overflow:hidden; border:0px solid #000000; width:100% ' name='datetoday' tabindex='-1' />
+						</td>
+						<td class='ee103' style='height:19pt;'>&nbsp;</td>
+						<td class='ee103' style='height:19pt;'>&nbsp;</td>
+						<td class='ee103' style='height:19pt;'>&nbsp;</td>
+						<td class='ee106' style='height:19pt;'>&nbsp;</td>
+						<td class='ee106' style='height:19pt;'>
+							<button type="button" class="btn btn-warning" id="prevScor">Copy Previous</button>
+						</td>
+						<td class='ee106' style='height:19pt;'>
+							<button type="button" class="btn btn-info" id="addTask">Add Task</button>
+						</td>
+						<td class='ee103' style='height:19pt;'>
+							<button type="button" class="btn btn-danger m-2" id="takeBreak">Take a Break</button>
+							<button type="button" class="btn btn-warning m-2" id="backFromBreak" style="display: none;">Back from Break</button>
+						</td>
+						<td class='ee109' style='height:19pt;'>&nbsp;</td>
+						<td class='ee106' style='height:19pt;'>
+							<!-- <button class="btn btn-primary m-2" id="login" style="width: 100%">Login</button> -->
+							<button class="btn btn-danger m-2" id="logout" style="display: none; width: 100%;">Logout</button>
+						</td>
+						<td class='ee112' style='height:19pt;'>
+							&nbsp;
+						</td>
+						<td class='ee109' style='height:19pt;'>&nbsp;</td>
+						<td class='ee109' style='height:19pt;'>&nbsp;</td>
+						<td class='ee109' style='height:19pt;'>&nbsp;</td>
+						<td class='ee109' style='height:19pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:59pt;'>
+						<td class='ee113' style='height:59pt;'>
+							Task(s)
+						</td>
+						<td class='ee116' style='height:59pt;'>
+							Priority
+						</td>
+						<td class='ee116' style='height:59pt;'>
+							Due Date
+						</td>
+						<td class='ee116' style='height:59pt;'>
+							Tec Lev
+						</td>
+						<td class='ee116' style='height:59pt;'>
+							% Comp
+						</td>
+						<td class='ee116' style='height:59pt;'>
+							Est Hr
+						</td>
+						<td class='ee116' style='height:59pt;'>
+							Act Time
+						</td>
+						<td class='ee117' style='height:15pt; width: 50px!important;'>
+							Hrs Wanted
+						</td>
+						<td class='ee118' style='height:59pt;'>&nbsp;</td>
+						<td class='ee117 text-center' style='height:59pt; border: 1px solid black'>
+							Clock In Time
+						</td>
+						<td class='ee116' style='height:59pt; width: 115px!important'>
+							Clock Out Time
+						</td>
+						<td class='ee109' style='height:59pt;'>&nbsp;</td>
+						<td class='ee109' style='height:59pt;'>
+						&nbsp;
+						</td>
+						<td class='ee109' style='height:59pt;'>&nbsp;</td>
+						</td>
+                    </tr>
+                    <tr style='height:15pt;'>
+						<td class='ee128' style='height:15pt;'>
+							<input id='task1' type='text' value='' class='ee130 form-control task' style='width:100%' onchange="recalc_onclick('task1')" name='task1' placeholder='Task Title' tabindex='1' data-sheet='1' data-row='3' data-col='1'/>
+						</td>
+						<td class='ee131' style='height:15pt;'>
+						    <fieldset id='FS1$priority1' style='border:0;padding:0;'>
+							    <select name='priority1' id='priority1' class='ee132 form-control priority' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='2' onchange="recalc_onclick('priority1')" size='1' data-sheet='1' data-row='3' data-col='2'>
+									<option  data-value='n:1'>1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' selected>3</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee133' style='height:15pt;'>
+                                <div id='cal_duedate1' class='input-group date ee132' style='min-width: 9em;'>
+                                    <input id='duedate1' name='duedate1' class='form-control duedate' size='16' type='text' data-widgettype='datepicker' data-caltype='button' tabindex='3' data-sheet='1' data-row='3' data-col='3'>
+                                    <span class='input-group-addon add-on'>
+                                        <i class='glyphicon glyphicon-calendar'></i> 
+                                    </span>
+                                </div>
+						</td>
+						<td class='ee131' style='height:15pt;'>
+						    <fieldset id='FS1$techlvl1' style='border:0;padding:0;'>
+							    <select name='techlvl1' id='techlvl1' class='ee132 form-control tech-level' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='4' onchange="recalc_onclick('techlvl1')" size='1' data-sheet='1' data-row='3' data-col='4'>
+									<option  data-value='n:1' selected >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' >3</option>
+									<option  data-value='n:4' >4</option>
+									<option  data-value='n:5' >5</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee134' style='height:15pt;'>
+							<input id='completion1' type='text' value='0%' class='ee136 form-control completion' style='width:100%' onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),0);recalc_onclick('completion1')" name='completion1' placeholder='' tabindex='5' data-sheet='1' data-row='3' data-col='5'/>
+						</td>
+						<td class='ee134' style='height:15pt;'>
+							<input id='esthr1' type='text' value='00:00:00' class='ee136 form-control estimated-hr' style='width:100%' name='esthr1' placeholder='' tabindex='6' data-sheet='1' data-row='3' data-col='6'/>
+						</td>
+						<td class='ee137' style='height:15pt;'>
+							<input type="text" class="form-control actual-hr" id="acthr1" readonly>
+						</td>
+						<td class='ee139' style='height:15pt;'>
+							<button type="button" class="delt btn btn-danger" style="background-color: #000!important; width: 100%">
+								<i class="fas fa-minus-circle"></i>
+							</button>
+						</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockin" type="text" id="clockin1" autocomplete="off">
+						</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockout" type="text" id="clockout1" readonly autocomplete="off">
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>
+							&nbsp;
+						</td>
+						<td class='ee109' style='height:15pt; width: 250px!important;'>
+							<!-- <select class="form-control" name="" id="users">
+								<option value="" selected disabled>Choose a user</option>
+							</select> -->
+							<input id='fullname' type='text' value='' class='ee145 required form-control' style='width:100%; display:none!important;' onchange="recalc_onclick('fullname')" name='fullname' placeholder='Your name' tabindex='7' data-sheet='1' data-row='3' data-col='14'/>
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:15pt;'>
+						<td class='ee128' style='height:15pt;'>
+							<input id='task2' type='text' value='' class='ee130 form-control task' style='width:100%' onchange="recalc_onclick('task2')" name='task2' placeholder='Tasks Title' tabindex='8' data-sheet='1' data-row='4' data-col='1'/>
+						</td>
+						<td class='ee131' style='height:15pt;'>
+						    <fieldset id='FS1$priority2' style='border:0;padding:0;'>
+							    <select name='priority2' id='priority2' class='ee132 form-control priority' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='9' onchange="recalc_onclick('priority2')" size='1' data-sheet='1' data-row='4' data-col='2'>
+									<option  data-value='n:1'  >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' selected>3</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee133' style='height:15pt;'>
+                                <div id='cal_duedate2' class='input-group date ee132' style='min-width: 9em;'>
+                                    <input id='duedate2' name='duedate2' class='form-control duedate' size='16' type='text' data-widgettype='datepicker' data-caltype='button' tabindex='10' data-sheet='1' data-row='4' data-col='3'>
+                                    <span class='input-group-addon add-on'>
+                                        <i class='glyphicon glyphicon-calendar'></i> 
+                                    </span>
+                                </div>
+						</td>
+						<td class='ee131' style='height:15pt;'>
+						    <fieldset id='FS1$techlvl2' style='border:0;padding:0;'>
+							    <select name='techlvl2' id='techlvl2' class='ee132 form-control tech-level' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='11' onchange="recalc_onclick('techlvl2')" size='1' data-sheet='1' data-row='4' data-col='4'>
+									<option  data-value='n:1' selected >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' >3</option>
+									<option  data-value='n:4' >4</option>
+									<option  data-value='n:5' >5</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee134' style='height:15pt;'>
+							<input id='completion2' type='text' value='0%' class='ee136 form-control completion' style='width:100%' onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),0);recalc_onclick('completion2')" name='completion2' placeholder='' tabindex='12' data-sheet='1' data-row='4' data-col='5'/>
+						</td>
+						<td class='ee134' style='height:15pt;'>
+							<input id='esthr2' type='text' value='00:00:00' class='ee136 form-control estimated-hr' style='width:100%' onchange="this.value=eedisplayFloatND(eeparseFloat(this.value),2);recalc_onclick('esthr2')" name='esthr2' placeholder='' tabindex='13' data-sheet='1' data-row='4' data-col='6'/>
+						</td>
+						<td class='ee137' style='height:15pt;'>
+							<input type="text" class="form-control actual-hr" id="acthr2" readonly>
+						</td>
+						<td class='ee139' style='height:15pt;'>
+							<button type="button" class="delt btn btn-danger" style="background-color: #000!important; width: 100%">
+								<i class="fas fa-minus-circle"></i>
+							</button>
+						</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockin" type="text" id="clockin2" readonly autocomplete="off">
+						</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockout" type="text" id="clockout2" readonly autocomplete="off">
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>
+							&nbsp;
+						</td>
+						<td class='ee109' style='height:15pt;'>
+							<!-- <input id='receiveremail' type='email' value='' class='ee145 required email form-control' style='width:100%' onchange="recalc_onclick('receiveremail')" name='receiveremail' placeholder='Receiver's Email Address' tabindex='14' data-sheet='1' data-row='4' data-col='14'/> -->
+							&nbsp;
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:15pt;'>
+						<td class='ee128' style='height:15pt;'>
+							<input id='task3' type='text' value='' class='ee130 form-control task' style='width:100%' onchange="recalc_onclick('task3')" name='task3' placeholder='Task Title' tabindex='15' data-sheet='1' data-row='5' data-col='1'/>
+						</td>
+						<td class='ee147' style='height:15pt;'>
+						    <fieldset id='FS1$priority3' style='border:0;padding:0;'>
+							    <select name='priority3' id='priority3' class='ee132 form-control priority' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='16' onchange="recalc_onclick('priority3')" size='1' data-sheet='1' data-row='5' data-col='2'>
+									<option  data-value='n:1' >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' selected>3</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee133' style='height:15pt;'>
+                                <div id='cal_duedate3' class='input-group date ee132' style='min-width: 9em;'>
+                                    <input id='duedate3' name='duedate3' class='form-control duedate' size='16' type='text' data-widgettype='datepicker' data-caltype='button' tabindex='17' data-sheet='1' data-row='5' data-col='3'>
+                                    <span class='input-group-addon add-on'>
+                                        <i class='glyphicon glyphicon-calendar'></i> 
+                                    </span>
+                                </div>
+						</td>
+						<td class='ee147' style='height:15pt;'>
+						    <fieldset id='FS1$techlvl3' style='border:0;padding:0;'>
+							    <select name='techlvl3' id='techlvl3' class='ee132 form-control tech-level' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='18' onchange="recalc_onclick('techlvl3')" size='1' data-sheet='1' data-row='5' data-col='4'>
+									<option  data-value='n:1' selected >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' >3</option>
+									<option  data-value='n:4' >4</option>
+									<option  data-value='n:5' >5</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee134' style='height:15pt;'>
+							<input id='completion3' type='text' value='0%' class='ee136 form-control completion' style='width:100%' onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),0);recalc_onclick('completion3')" name='completion3' placeholder='' tabindex='19' data-sheet='1' data-row='5' data-col='5'/>
+						</td>
+						<td class='ee148' style='height:15pt;'>
+							<input id='esthr3' type='text' value='00:00:00' class='ee136 form-control estimated-hr' style='width:100%' onchange="this.value=eedisplayFloatND(eeparseFloat(this.value),2);recalc_onclick('esthr3')" name='esthr3' placeholder='' tabindex='20' data-sheet='1' data-row='5' data-col='6'/>
+						</td>
+						<td class='ee137' style='height:15pt;'>
+							<input type="text" class="form-control actual-hr" id="acthr3" readonly>
+						</td>
+						<td class='ee139' style='height:15pt;'>
+							<button type="button" class="delt btn btn-danger" style="background-color: #000!important; width: 100%">
+								<i class="fas fa-minus-circle"></i>
+							</button>
+						</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockin" type="text" id="clockin3" readonly autocomplete="off">
+						</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockout" type="text" id="clockout3" readonly autocomplete="off">
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>
+						    <!-- <button type='button' class='btn btn-primary btn-sm spin-button sbutton-submit' id="submitBtn" data-style='spin-right' style='font:inherit'><span class='glyphicon glyphicon-send' style='margin-right:.6em'></span><span class='btn-label btn-label-right'>Submit</span><span class='spin'></span></button> -->
+							&nbsp;
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:15pt;'>
+						<td class='ee128' style='height:15pt;'>
+							<input id='task4' type='text' value='' class='ee130 form-control task' style='width:100%' onchange="recalc_onclick('task4')" name='task4' placeholder='Task Title' tabindex='21' data-sheet='1' data-row='6' data-col='1'/>
+						</td>
+						<td class='ee151' style='height:15pt;'>
+						    <fieldset id='FS1$priority4' style='border:0;padding:0;'>
+							    <select name='priority4' id='priority4' class='ee132 form-control priority' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='22' onchange="recalc_onclick('priority4')" size='1' data-sheet='1' data-row='6' data-col='2'>
+									<option  data-value='n:1' >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' selected>3</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee133' style='height:15pt;'>
+                                <div id='cal_duedate4' class='input-group date ee132' style='min-width: 9em;'>
+                                    <input id='duedate4' name='duedate4' class='form-control duedate' size='16' type='text' data-widgettype='datepicker' data-caltype='button' tabindex='23' data-sheet='1' data-row='6' data-col='3'>
+                                    <span class='input-group-addon add-on'>
+                                        <i class='glyphicon glyphicon-calendar'></i> 
+                                    </span>
+                                </div>
+						</td>
+						<td class='ee151' style='height:15pt;'>
+						    <fieldset id='FS1$techlvl4' style='border:0;padding:0;'>
+							    <select name='techlvl4' id='techlvl4' class='ee132 form-control tech-level' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='24' onchange="recalc_onclick('techlvl4')" size='1' data-sheet='1' data-row='6' data-col='4'>
+									<option  data-value='n:1' selected >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' >3</option>
+									<option  data-value='n:4' >4</option>
+									<option  data-value='n:5' >5</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee134' style='height:15pt;'>
+							<input id='completion4' type='text' value='0%' class='ee136 form-control completion' style='width:100%' onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),0);recalc_onclick('completion4')" name='completion4' placeholder='' tabindex='25' data-sheet='1' data-row='6' data-col='5'/>
+						</td>
+						<td class='ee152' style='height:15pt;'>
+							<input id='esthr4' type='text' value='00:00:00' class='ee136 form-control estimated-hr' style='width:100%' onchange="this.value=eedisplayFloatND(eeparseFloat(this.value),2);recalc_onclick('esthr4')" name='esthr4' placeholder='' tabindex='26' data-sheet='1' data-row='6' data-col='6'/>
+						</td>
+						<td class='ee137' style='height:15pt;'>
+							<input type="text" class="form-control actual-hr" id="acthr4" readonly>
+						</td>
+						<td class='ee139' style='height:15pt;'>
+							<button type="button" class="delt btn btn-danger" style="background-color: #000!important; width: 100%">
+								<i class="fas fa-minus-circle"></i>
+							</button>
+						</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockin" type="text" id="clockin4" readonly autocomplete="off">
+						</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockout" type="text" id="clockout4" readonly autocomplete="off">
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:15pt;' id=" ">
+						<td class='ee128' style='height:15pt;'>
+							<input id='task5' type='text' value='' class='ee130 form-control task' style='width:100%' onchange="recalc_onclick('task5')" name='task5' placeholder='Task Title' tabindex='27' data-sheet='1' data-row='7' data-col='1'/>
+						</td>
+						<td class='ee151' style='height:15pt;'>
+						    <fieldset id='FS1$priority5' style='border:0;padding:0;'>
+							    <select name='priority5' id='priority5' class='ee132 form-control priority' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='28' onchange="recalc_onclick('priority5')" size='1' data-sheet='1' data-row='7' data-col='2'>
+									<option  data-value='n:1' >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' selected>3</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee133' style='height:15pt;'>
+                                <div id='cal_duedate5' class='input-group date ee132' style='min-width: 9em;'>
+                                    <input id='duedate5' name='duedate5' class='form-control duedate' size='16' type='text' data-widgettype='datepicker' data-caltype='button' tabindex='29' data-sheet='1' data-row='7' data-col='3'>
+                                    <span class='input-group-addon add-on'>
+                                        <i class='glyphicon glyphicon-calendar'></i> 
+                                    </span>
+                                </div>
+						</td>
+						<td class='ee151' style='height:15pt;'>
+						    <fieldset id='FS1$techlvl5' style='border:0;padding:0;'>
+							    <select name='techlvl5' id='techlvl5' class='ee132 form-control tech-level' style=' width:100% ; padding-left:4px; padding-right:2px;' tabindex='30' onchange="recalc_onclick('techlvl5')" size='1' data-sheet='1' data-row='7' data-col='4'>
+									<option  data-value='n:1' selected >1</option>
+									<option  data-value='n:2' >2</option>
+									<option  data-value='n:3' >3</option>
+									<option  data-value='n:4' >4</option>
+									<option  data-value='n:5' >5</option>
+							    </select>
+						    </fieldset>
+						</td>
+						<td class='ee134' style='height:15pt;'>
+							<input id='completion5' type='text' value='0%' class='ee136 form-control completion' style='width:100%' onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),0);recalc_onclick('completion5')" name='completion5' placeholder='' tabindex='31' data-sheet='1' data-row='7' data-col='5'/>
+						</td>
+						<td class='ee152' style='height:15pt;'>
+							<input id='esthr5' type='text' value='00:00:00' class='ee136 form-control estimated-hr' style='width:100%' onchange="this.value=eedisplayFloatND(eeparseFloat(this.value),2);recalc_onclick('esthr5')" name='esthr5' placeholder='' tabindex='32' data-sheet='1' data-row='7' data-col='6'/>
+						</td>
+						<td class='ee137' style='height:15pt;'>
+							<input type="text" class="form-control actual-hr" id="acthr5" readonly>
+						</td>
+						<td class='ee139' style='height:15pt;'>
+							<button type="button" class="delt btn btn-danger" style="background-color: #000!important; width: 100%">
+								<i class="fas fa-minus-circle"></i>
+							</button>
+						</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockin" type="text" id="clockin5" readonly autocomplete="off">
+						</td>
+						<td class='ee142' style='height:15pt;'>
+							<input class="form-control clockout" type="text" id="clockout5" readonly autocomplete="off">
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:15pt;' id="endData">
+						<td class='ee153' style='height:15pt;'>
+							Total
+						</td>
+						<td class='ee156' style='height:15pt;'>&nbsp;</td>
+						<td class='ee157' style='height:15pt;'>&nbsp;</td>
+						<td class='ee156' style='height:15pt;'>&nbsp;</td>
+						<td class='ee158' style='height:15pt;'>&nbsp;</td>
+						<td class='ee161' style='height:15pt;'>
+						<input id='XLEW_1_8_6' type='text' readonly='readonly' value='00:00:00' class='ee161' style='overflow:hidden; border:0px solid #000000; width:100% ' name='XLEW_1_8_6' tabindex='-1' />
+						</td>
+						<td class='ee163' style='height:15pt;'>
+							<input id="totalhrs" type="text" value='0' style='overflow:hidden; border:0px solid #000000; width:100%; text-align: center' readonly>
+						</td>
+						<td class='ee164' style='height:15pt;'>&nbsp;</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:15pt;'>
+						<td class='ee166' style='height:15pt;'>
+							Hrs Wanted
+						</td>
+						<td class='ee168' style='height:15pt;'>&nbsp;</td>
+						<td class='ee168' style='height:15pt;'>&nbsp;</td>
+						<td class='ee168' style='height:15pt;'>&nbsp;</td>
+						<td class='ee170' style='height:15pt;'>&nbsp;</td>
+						<td class='ee168' style='height:15pt;'>&nbsp;</td>
+						<td class='ee172' style='height:15pt;'>&nbsp;</td>
+						<td class='ee168' style='height:15pt;'>
+							<input type="text" class="form-control" id="hrsWanted">
+						</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:15pt;' id="projectsData">
+						<td class='ee175' style='height:15pt;'>
+							PROJECTS
+						</td>
+						<td class='ee177' style='height:15pt;'>&nbsp;</td>
+						<td class='ee177' style='height:15pt;'>&nbsp;</td>
+						<td class='ee177' style='height:15pt;'>&nbsp;</td>
+						<td class='ee179' style='height:15pt;'>&nbsp;</td>
+						<td class='ee177' style='height:15pt;'>&nbsp;</td>
+						<td class='ee181' style='height:15pt;'>&nbsp;</td>
+						<td class='ee177' style='height:15pt;'>
+							<button type="button" class="btn btn-success" style="width: 100%;" id="addProj">Add Project</button>
+						</td>
+						<td class='ee118' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:16pt;' id='breakData'>
+						<td class='ee175' style='height:15pt; background-color: #c00000; color: #fff ;'>
+							BREAK
+						</td>
+						<td class='ee175 break-start' style='height:15pt;background-color: #c00000; color: #fff; text-align: center;' colspan = '3' id="breakStart"></td>
+						<td class='ee175 break-end' style='height:15pt;background-color: #c00000; color: #fff; text-align: center;' colspan = '3' id="breakEnd"></td>
+						<td class='ee175 total-break' style='height:15pt;background-color: #c00000; color: #fff ;' id="totalBreak"></td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:16pt;'>
+						<td class='ee175' style='height:15pt; background-color: #c00000; color: #fff ;'>
+							TOTAL
+						</td>
+						<td class='ee175' style='height:15pt;background-color: #c00000; color: #fff; text-align: center;' colspan = '3'></td>
+						<td class='ee175' style='height:15pt;background-color: #c00000; color: #fff; text-align: center;' colspan = '3'></td>
+						<td class='ee175' style='height:15pt;background-color: #c00000; color: #fff ;' id="allBreaks">0</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+                    </tr>
+                    </tr>
+                    <tr style='height:16pt;'>
+						<!-- <td class='ee109' style='height:15pt;'>
+						</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td>
+						<td class='ee109' style='height:15pt;'>&nbsp;</td> -->
+                    </tr>
+					<tr class='ee113' style="height: 16pt;">
+						<td colspan='8' class="text-center">Send Scorecard To </td>
+					</tr>
+					<tr style="height: 16pt;">
+						<td class="ee113" rowspan='2'>Receiver's Email: </td>
+						<td class="ee175" colspan='7'>
+							<input id='receiveremail' type='email' value='' class='ee145 required email form-control' style='width:100%' onchange="recalc_onclick('receiveremail')" name='receiveremail' placeholder='Receiver's Email Address' tabindex='14' data-sheet='1' data-row='4' data-col='14'/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan='7'><button type='button' class='btn btn-primary btn-sm spin-button sbutton-submit' id="submitBtn" data-style='spin-right' style='font:inherit; width: 100%;'><span class='glyphicon glyphicon-send' style='margin-right:.6em'></span><span class='btn-label btn-label-right'>Submit</span><span class='spin'></span></button></td>
+					</tr>
+					<tr style='height:16pt;'></tr>
+					<tr class="ee113">
+						<td colspan="8" class="text-center">Needs Review</td>
+					</tr>
+					<tr style="height: 16pt;">
+						<td class="ee113" rowspan='2'>Date to be Reviewed: </td>
+						<td class="ee175" colspan='7'>
+							<div id="datepicker" class="input-group date ee132" style="min-width: 100%;">
+								<input id="getDate" class="form-control duedate" size="16" type="text" data-widgettype="datepicker" >
+								<span class="input-group-addon add-on">
+									<i class="glyphicon glyphicon-calendar"></i> 
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan='7'><button type='button' class='btn btn-primary btn-sm' id="sendBtn" data-style='spin-right' style='font:inherit; width: 100%;'><span class='glyphicon glyphicon-send' style='margin-right:.6em'></span><span class='btn-label btn-label-right'>Send</span><span class='spin'></span></button></td>
+					</tr>
+                </table>
+
+              </section>
+</div>
+                </div>
+            </div>
+			<input type="hidden" id="xl_target2" name="xl_target2" value="zHHFP20sHarXfjMrTY1pLRu1wqoioRtPn/fZPefHytWPYmvYDsLLa9QmguwsOoPhGe1CEnEAi3FLHsSggLQ5bp8WTKaEWHDiNg4hV84Oeg5byCxN7ln/n4yPj/daGE9zyMfN83E331BX/ul830Gfo85QmVOnCeZmwC0j062maNo="><input type="hidden" id="xl_templateimages" name="xl_templateimages" value="1"><input type="hidden" id="xl_aux2" name="xl_aux2" value="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">
+        </form>
+        <section class='row toolbar toolbar-position-bottom no-print' >
+            
+            <div class='toolbar-panel-right col-xs-12 col-sm-12 col-md-5 col-md-push-6'>
+                <section id='ssc-ls'></section>
+            </div><div class='toolbar-panel-left col-xs-12 col-sm-11 col-md-6 col-md-pull-5'></div>
+            <div class='toolbar-panel-right-right col-sm-1 col-md-1'><a class='poweredby-logo' href='http://www.spreadsheetconverter.com/' target='_blank' tabindex='-1' title='Fast online spreadsheet powered by SpreadsheetConverter' alt='Fast online spreadsheet powered by SpreadsheetConverter'></a></div>
+        </section>
+  
+		<!-- Modal -->
+		<div class="modal-container">
+
+		</div>
+		
+    </body>
+    <script type="text/javascript" src="assets/js/app.min.js" ></script>
+</html>
